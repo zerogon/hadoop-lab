@@ -1,0 +1,4 @@
+wordcount\WordCount.class
+common\MyWritableComparable.class
+wordcount\WordCountMapper.class
+wordcount\WordCountReducer.class
