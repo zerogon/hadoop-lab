@@ -1,4 +1,4 @@
-package wordcount;
+package practice;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -22,8 +22,8 @@ public class Mapper_prac extends Mapper<LongWritable, Text, Text, IntWritable>{
 		StringTokenizer str = new StringTokenizer(value.toString());
 		while(str.hasMoreTokens()) {
 			word.set(str.nextToken());
+			context.write(word, one);
 		}
-		context.write(word, one);
 		
 	}
 	
