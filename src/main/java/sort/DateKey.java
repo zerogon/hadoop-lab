@@ -58,7 +58,8 @@ public class DateKey implements WritableComparable<DateKey> {
 	    WritableUtils.writeString(out, year);
 	    out.writeInt(month);
 	  }
-
+	  // 0인경우 같은값
+	  // -1 인경우 뒤에가 더 큼, 사전순으로 a보다 b가 큼, 숫자 오름차순
 	  public int compareTo(DateKey key) {
 	    int result = year.compareTo(key.year);
 	    if (0 == result) {
