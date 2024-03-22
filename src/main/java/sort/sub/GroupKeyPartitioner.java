@@ -1,4 +1,4 @@
-package sort.groupKey;
+package sort.sub;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.mapreduce.Partitioner;
